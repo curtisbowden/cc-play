@@ -2,6 +2,7 @@
 #include <string>
 
 #include "hash.hh"
+#include "concurrent.hh"
 
 using std::cout;
 using std::endl;
@@ -20,9 +21,9 @@ int main(int argc, char **argv){
     hashObject.AddItem("Leslie", "tea"); 
     hashObject.AddItem("Ron", "scotch");
     hashObject.AddItem("Anne", "wine");
-
-
     hashObject.PrintHashTable();
+
+    concurrent();
 
     return 0;
 }
